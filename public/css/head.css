@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "colors.css";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--grey-color);
+  padding: 5px 10px;
+}
+
+#logo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+header > #start {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+header > #center {
+  flex-grow: 2;
+}
+header > #end {
+  flex-grow: 1;
+}
+
+#search-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  border: 1px solid var(--grey-color);
+}
+
+#search {
+  flex-grow: 1;
+  margin: 5px;
+  border: none;
+}
+
+#search-button {
+  border: none;
+  flex-shrink: 0;
+  width: 65px;
+  border-left: 1px solid var(--grey-color);
+}
