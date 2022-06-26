@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "./colors.css";
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  padding: 10px;
+}
+
+.content-head {
+  background-color: tomato;
+}
+
+.content-head > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: small;
+  padding: 5px;
+}
+
+.content-body * {
+  word-break: break-all;
+}
+
+.upload {
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid var(--outline-color);
+}

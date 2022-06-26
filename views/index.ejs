@@ -7,17 +7,62 @@
     <title>Hwan-Yeong</title>
 
     <link rel="stylesheet" type="text/css" href="css/head.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <%- include("./partials/head") %>
+    <%- include("./partials/navigation") %>
 
-    <div id="contents">
-        <img id="content" src="image/sample.png">
-        <img id="content" src="image/sample.png">
-        <img id="content" src="image/sample.png">
-        <img id="content" src="image/sample.png">
-        <img id="content" src="image/sample.png">
+    <div class="contents">
+        <div class="content-container">
+            <div class="content-head">
+                <img class="content" src="image/sample.png">
+            </div>
+            <div class="content-body">
+                <div>경0이가 좋아하는 해쭈</div>
+                <div>만든날짜: 2022-06-18 12:00</div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content-head">
+                <img class="content" src="image/sample.png">
+            </div>
+            <div class="content-body">
+                <div>경0이가 좋아하는 해쭈</div>
+                <div>만든날짜: 2022-06-18 12:00</div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content-head">
+                <img class="content" src="image/sample.png">
+            </div>
+            <div class="content-body">
+                <div>경0이가 좋아하는 해쭈</div>
+                <div>만든날짜: 2022-06-18 12:00</div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content-head">
+                <img class="content" src="image/sample.png">
+            </div>
+            <div class="content-body">
+                <div>경0이가 좋아하는 해쭈</div>
+                <div>만든날짜: 2022-06-18 12:00</div>
+            </div>
+        </div>
     </div>
+
+    <% if (user.isLogined) { %>
+        <button class="upload">
+            <image src="image/upload.svg"></image>
+            사진 업로드
+        </button>
+    <% } %>
+
+    <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

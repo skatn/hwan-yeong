@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "./colors.css";
+
+.side-menu {
+  position: absolute;
+  z-index: 1;
+  width: 220px;
+  animation-duration: 200ms;
+  animation-name: slide;
+  /* height: 100%; */
+  background-color: white;
+  display: none;
+}
+
+@keyframes slide {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
